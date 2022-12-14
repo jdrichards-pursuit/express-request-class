@@ -1,6 +1,10 @@
-const express = require("express");
-const morgan = require("morgan");
-const rocks = require("./models/rock.js");
+import express from "express";
+import morgan from "morgan";
+import rocks from "./models/rock.js";
+
+// const express = require("express");
+// const morgan = require("morgan");
+// const rocks = require("./models/rock.js");
 const app = express();
 
 // MIDDLEWARE TO SEE HTTP REQUESTS
@@ -62,4 +66,5 @@ app.get("/rocks/oops/:index", (req, res) => {
   else res.send("this is the index: " + index);
 });
 
-module.exports = app;
+export default app;
+// module.exports = app;

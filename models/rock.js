@@ -1,4 +1,4 @@
-module.exports = [
+const rocks = [
   "Crocoite",
   "Wulfenite",
   "Amber",
@@ -6,3 +6,5 @@ module.exports = [
   "Azurite",
   "Amethyst",
 ];
+
+export default rocks;
